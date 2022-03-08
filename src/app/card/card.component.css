@@ -1,0 +1,79 @@
+.app-card{
+    width: 350px;
+    height:550px;
+    padding:20px;
+    background: #ffffff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+    transition: 0.3s;
+    color:black;
+    margin-left: 0px;;
+}
+.app-card:hover{
+    height:580px;
+    background: #8f56bd;
+    color:white;
+    
+}
+.app-card:hover  .btn { 
+    color:white;
+    border: 2px solid white;
+}
+
+
+
+h1{
+    font-size: 20px;
+    
+}
+h2{
+    font-size:60px;
+    /* margin-bottom: 30px; */
+    
+}
+p{ 
+    height: 50px;
+    font-size: 20px;
+    margin:0;
+    
+    border-bottom: 1px solid #bdbdbd;
+   
+    padding: 20px 0 0 0;
+    
+}
+.corpo{
+   width: 100%;
+}
+.preco{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid #bdbdbd;
+    margin-top: - 30px;
+}
+h3{ 
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.btn{
+    margin-top:20px;
+    width: 200px;
+    height: 50px;
+    background:rgba(161, 161, 161, 0);
+    border: 2px solid #8f56bd;
+    color: #8f56bd;
+    font-size: 20px;
+    transition: 0.1s;
+    
+}
+.btn:hover{
+    background:#ffffff55;
+}

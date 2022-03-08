@@ -1,0 +1,17 @@
+<mat-card class="app-card" 
+[style]="'background-color: ' + background + '; color: '+color+';'"
+>
+    <mat-card-header>
+        <mat-card-title><h1>{{ titulo }}</h1></mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="corpo">
+        <div class="preco">
+            <h3>$</h3>
+            <h2>{{ preco }}</h2>
+        </div>
+        <p id="p-top">{{ conteudo1 }}</p>
+        <p>{{ conteudo2 }}</p>
+        <p>{{ conteudo3 }}</p>
+        <mat-button-toggle (click)="emitirEvento()" class="btn">Join</mat-button-toggle>
+    </mat-card-content>
+</mat-card>
