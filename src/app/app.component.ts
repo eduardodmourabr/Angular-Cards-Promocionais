@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {MatSnackBar} from '@angular/material/snack-bar';
+
+
 
 @Component({
   selector: 'app-root',
@@ -6,11 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projeto03';
+  title = 'projeto04';
 
-  cardConteudo:string = 'Lorem ipsum dolor sit amet, consectetur adipLorem ipsum dolor sit amet, consectetur adipLorem ipsum dolor sit amet, consectetur adipLorem ipsut amet, consectetur adipLorem ietur adipLorem ipsum dolor sit amet, consectetur adipLorem ipsum dolor sit amet, consectetur adipLorem ipsum dolor sit amet, consectetur adipLorem ipsum dolor sit amet, consectetur adipLorem ipsum dolor sit amet, consectetur adipLorem ipsum dolor sit amet, consecteip'
-
-  alertar() {
-    alert('Você contratou este plano!')
+  constructor(private _snackBar: MatSnackBar) {
+  }
+  openSnackBar() {
+    this._snackBar.open('Você aderiu a este pacote!' , 'fechar');
   }
 }

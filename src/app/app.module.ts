@@ -18,6 +18,7 @@ import { CardComponent } from './card/card.component';
     MaterialModule,
     BrowserAnimationsModule
     
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
